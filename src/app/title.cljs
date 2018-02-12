@@ -1,8 +1,5 @@
 (ns app.title)
 
-(defn title [copy]
-      [:h1 (str copy)])
-
-      ;(sab/html [:div
-      ;           [:h1.title title
-      ;            (when sub-title [:small sub-title])]]))
+(defn title [title sub-title]
+      [:h1.title title
+       (when sub-title [:small (str " " sub-title)])])

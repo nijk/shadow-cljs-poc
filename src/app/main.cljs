@@ -1,6 +1,6 @@
 (ns app.main
     (:require
-      [reagent.core :as re-agent]
+      [reagent.core :as reagent]
       [app.title :as title]))
 
 (def value-a 1)

@@ -1,6 +1,6 @@
 {:source-paths ["src"]
  :dependencies [
-                [reagent "0.7.0" :exclusions [cljsjs/react cljsjs/react-dom]]]
+                [reagent "0.8.0-alpha2"]]
 
  :builds {:app {:output-dir "target/"
                 :asset-path "."
