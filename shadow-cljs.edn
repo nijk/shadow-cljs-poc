@@ -1,0 +1,9 @@
+{:source-paths ["src"]
+ :dependencies [
+                [reagent "0.7.0" :exclusions [cljsjs/react cljsjs/react-dom]]]
+
+ :builds {:app {:output-dir "target/"
+                :asset-path "."
+                :target :browser
+                :modules {:main {:entries [app.main]}}
+                :devtools {:after-load app.main/reload!}}}}
